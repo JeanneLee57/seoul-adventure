@@ -13,6 +13,7 @@ import { ScenarioQuest } from "./entities/ScenarioQuest.js";
 export default defineConfig({
   clientUrl:
     process.env.DIRECT_URL ??
+    process.env.DATABASE_URL ??
     "postgresql://postgres:postgres@localhost:5432/seoul_adventure",
   entities: [User, Place, Course, CoursePlace, Quest, Attempt, QuestState, Scenario, ScenarioQuest],
   migrations: {

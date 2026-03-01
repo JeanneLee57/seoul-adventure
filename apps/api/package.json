@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "private": true,
+  "packageManager": "pnpm@9.0.0",
   "scripts": {
     "dev": "TSX_TSCONFIG_PATH=../../tsconfig.json tsx watch src/index.ts",
     "build": "tsup src/index.ts --format cjs --dts",
